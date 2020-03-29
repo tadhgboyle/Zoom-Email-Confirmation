@@ -1,0 +1,15 @@
+Hello,
+
+Below is the link to our scheduled Zoom session. 
+
+All you need to do is click on the link provided, if you don’t already have the app on your device the link will lead you to download the app automatically. 
+You will only need to do this the first time you use Zoom.
+
+Time: {time}
+
+Duration: {duration} minutes.
+
+Link: {meeting_link}
+
+Kind regards,
+Julie

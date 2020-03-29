@@ -1,0 +1,25 @@
+html
+  head
+    title= title
+  body
+    h1= message
+  center
+    p Send Meeting Confirmation [#{meeting_id}]
+      if(error)
+        <div class="ui top attached label orange">
+          p= error
+        </div>
+        <br>
+      else if(success)
+        <div class="ui top attached label green">
+          p= success
+        </div>
+        <br>
+      endif
+  p Client Email Address: #{client_email}
+  p Email Preview: 
+    pre #{email}
+  form(action='/send-mail' method='post')
+    input(name='client_email' value=client_email type='hidden')
+    input(name='email' value=email type='hidden')
+    input(value='Submit' type='submit')

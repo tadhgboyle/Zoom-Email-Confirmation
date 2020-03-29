@@ -1,0 +1,20 @@
+{
+  "name": "zoom-email-util",
+  "version": "1.0.0",
+  "description": "Send clients confirmation emails for Zoom meetings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tadhg Boyle",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "nodemailer": "^6.4.6",
+    "pug": "^2.0.4",
+    "replace-in-file": "^5.0.2",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}

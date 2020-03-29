@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Confirmation Email - Zoom</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="ui middle aligned center aligned grid">
+        <div class="column">
+        if(error)
+            <div class="ui top attached label orange">
+                p= error
+            </div>
+            <br>
+            <h2 class="ui teal header">
+                <div class="content">Send Client Confirmation Email</div>
+            </h2>
+        else if(success)
+            <div class="ui top attached label green">
+                p= success
+            </div>
+            <br>
+            <h2 class="ui teal header">
+                <div class="content">Send Client Confirmation Email</div>
+            </h2>
+        else
+            <h2 class="ui teal header">
+                <div class="content">Send Client Confirmation Email</div>
+            </h2>
+        endif
+            <form class="ui large form" action="/meeting-info" method="post">
+                <div class="ui stacked segment">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="hashtag icon"></i>
+                            <input type="text" name="meeting" placeholder="Meeting ID" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="mail icon"></i>
+                            <input type="email" name="email" placeholder="Client E-mail" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="ui fluid large teal submit button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
